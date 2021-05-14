@@ -1,0 +1,173 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			"$locationPolicy": 1
+			"defaultCloseOperation": 2
+			"title": "Obtenção dados Lemitti"
+			"resizable": false
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "Arquivo de Entrada Documentos:"
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "Segoe UI", 1, 14 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 20
+				"y": 50
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Arquivo de Validação:"
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "Segoe UI", 1, 14 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 85
+				"width": 150
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "Arquivo de Saída:"
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "Segoe UI", 1, 14 )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 60
+				"y": 120
+				"width": 125
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tfArqSaida"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 180
+				"y": 115
+				"width": 395
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tfArqValidacao"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 180
+				"y": 80
+				"width": 395
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Obter Contatos"
+				"font": new java.awt.Font( "Segoe UI", 1, 16 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 40
+				"y": 365
+				"width": 535
+				"height": 35
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "Obtenção Contatos do Lemitti"
+				"font": new java.awt.Font( "Segoe UI", 1, 20 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 0
+				"y": 10
+				"width": 605
+				"height": 20
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label7"
+				"text": "Tipo de Documento do Arquivo"
+				"font": new java.awt.Font( "Segoe UI", 1, 16 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 170
+				"width": 540
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "rbTpDocCNPJ"
+				"text": "CNPJ"
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "Segoe UI", 1, 12 )
+				"background": new java.awt.Color( 204, 204, 255, 255 )
+				"foreground": new java.awt.Color( 0, 0, 0, 255 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rbTpDocCNPJActionPerformed", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rbTpDocCNPJActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 270
+				"y": 195
+				"width": 300
+				"height": 25
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel2"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 275
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel4"
+				"background": new java.awt.Color( 204, 204, 255, 255 )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "rbTpDocCPF"
+					"text": "CPF"
+					"horizontalAlignment": 0
+					"font": new java.awt.Font( "Segoe UI", 1, 12 )
+					"background": new java.awt.Color( 204, 204, 255, 255 )
+					"foreground": new java.awt.Color( 0, 0, 0, 255 )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rbTpDocCPFActionPerformed", true ) )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rbTpDocCPFActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 0
+					"y": 0
+					"width": 245
+					"height": 25
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 195
+				"height": 25
+				"width": 540
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tfArqEntrada"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 245
+				"y": 45
+				"width": 330
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "rbObterContatoVinc"
+				"text": "Obtenção contatos dos vinculos?"
+				"background": new java.awt.Color( 255, 51, 51, 255 )
+				"font": new java.awt.Font( "Segoe UI", 1, 16 )
+				"horizontalAlignment": 0
+				"foreground": new java.awt.Color( 0, 51, 51, 255 )
+				addEvent( new FormEvent( "javax.swing.event.ChangeListener", "stateChanged", "radioButton1StateChanged", true ) )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "radioButton1ActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 255
+				"width": 545
+				"height": 45
+			} )
+			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+				name: "menuBar1"
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": "Opções"
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "menuItem1"
+						"text": "Sair"
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "menuItem1ActionPerformed", true ) )
+					} )
+				} )
+			}
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 5 )
+			"size": new java.awt.Dimension( 605, 465 )
+		} )
+	}
+}
