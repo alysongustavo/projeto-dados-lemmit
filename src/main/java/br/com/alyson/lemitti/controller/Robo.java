@@ -4,7 +4,10 @@ import br.com.alyson.lemitti.model.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.opera.OperaOptions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,7 +20,10 @@ public class Robo {
 
     public Robo(String urlPrincipal) {
 
-        driver = new OperaDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--verbose");
+        chromeOptions.addArguments("--allowed-ips");
+        driver = new ChromeDriver(chromeOptions);
         driver.get(urlPrincipal);
     }
 
@@ -215,7 +221,7 @@ public class Robo {
 
             if(!ehObtencaoContatosVinculo){
 
-                WebElement vinculos = driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div[3]/div/div[4]/div[2]/div/table/tbody"));
+                WebElement vinculos = driver.findElement(By.xpath("//*[@id=\"content\"]/div[2]/div[4]/div/div[4]/div[2]/div/table/tbody"));
 
                 List<WebElement> linhasVinculos = vinculos.findElements(By.cssSelector("tr"));
 

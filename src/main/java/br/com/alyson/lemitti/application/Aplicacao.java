@@ -47,10 +47,14 @@ public class Aplicacao extends JFrame {
             caminhoArquivoOrigem.append("\\");
             caminhoArquivoOrigem.append("dados");
             caminhoArquivoOrigem.append("\\");
+            caminhoArquivoOrigem.append("2019");
+            caminhoArquivoOrigem.append("\\");
 
             StringBuilder caminhoArquivoDestino = new StringBuilder(Constantes.pathAplicacao);
             caminhoArquivoDestino.append("\\");
             caminhoArquivoDestino.append("resultado");
+            caminhoArquivoDestino.append("\\");
+            caminhoArquivoDestino.append("2019");
             caminhoArquivoDestino.append("\\");
 
             String arqDocEntrada = obtencaoContatosVinculo ? caminhoArquivoOrigem.toString() + "vinculos" + "\\" + tfArqEntrada + "_vinculo" + ".txt"  : caminhoArquivoOrigem.toString() + tfArqEntrada + ".txt";
